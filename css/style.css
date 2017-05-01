@@ -1,0 +1,674 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+
+}
+/* ================================================ SMALL SCREEN SIZE ================================================ */
+
+@media (min-width: 320px) {
+    .backgroundImages {
+        width: auto;
+        display: block;
+    }
+    /* NAVIGATION AND COVER IMAGE*/
+    
+    header {
+        position: fixed;
+        width: 100%;
+    }
+    header img {
+        float: left;
+    }
+    header ul {
+        display: none;
+    }
+    header p {
+        float: right;
+    }
+    .navtext {
+        text-transform: uppercase;
+        font-family: brandon-grotesque, sans-serif;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        color: #ffffff;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 50px;
+        border-bottom: 5px #f88601;
+    }
+    li:hover {
+        color: #f88601;
+    }
+    .bannerTextOne {
+        font-family: 'Crimson Text', serif;
+        color: #ffffff;
+        font-size: 30px;
+        line-height: 40px;
+        position: absolute;
+        top: 175px;
+        left: 50px;
+        width: 80%;
+        background: rgba(244, 244, 244, 0.25);
+        padding: 20px;
+    }
+    .brandon {
+        text-transform: uppercase;
+        font-family: brandon-grotesque, sans-serif;
+        font-size: 32px;
+        font-style: normal;
+        color: #ffffff;
+        letter-spacing: .05em;
+    }
+    .bannerTextTwo {
+        text-transform: uppercase;
+        font-family: brandon-grotesque, sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        color: #ffffff;
+        letter-spacing: .05em;
+        position: absolute;
+        top: 550px;
+        left: 50px;
+        width: 80%;
+    }
+    span.bannerTextTwo {
+        border-bottom: solid 3px #ffffff;
+        width: auto;
+        height: 1.5em;
+    }
+    div#imageTwo {
+        position: relative;
+    }
+    span.bannerSectionTwo {
+        position: absolute;
+    }
+    p.bannerTextThree {
+        font-family: 'Crimson Text', serif;
+        color: #323232;
+        font-size: 48px;
+    }
+    p.bannerTextFour {
+        font-family: 'Crimson Text', serif;
+        color: #323232;
+        font-size: 24px;
+    }
+    p.bannerTextThree {
+        font-family: 'Crimson Text', serif;
+        color: #323232;
+        font-size: 42px;
+        top: 850px;
+        left: 160px;
+        position: absolute;
+    }
+    p.bannerTextFour {
+        font-family: 'Crimson Text', serif;
+        color: #323232;
+        font-size: 20px;
+        top: 930px;
+        left: 160px;
+        position: absolute;
+    }
+    /* === CASE STUDIES === */
+    
+    .caseContainer {
+        position: relative;
+    }
+    .classLogo {
+        position: absolute;
+        top: 100px;
+        left: 150px;
+    }
+    .titleText {
+        text-transform: uppercase;
+        font-size: 40px;
+        line-height: 50px;
+        font-family: brandon-grotesque, sans-serif;
+        position: absolute;
+        left: 150px;
+        top: 200px;
+        font-style: normal;
+        color: #ffffff;
+        letter-spacing: .05em;
+    }
+    .titleSecondaryText {
+        font-size: 24px;
+        width: 60%;
+        font-family: 'Crimson Text', serif;
+        position: absolute;
+        left: 150px;
+        top: 400px;
+        font-style: normal;
+        color: #ffffff;
+        letter-spacing: .05em;
+    }
+    .caseButton {
+        text-transform: uppercase;
+        font-size: 20px;
+        width: 35%;
+        font-family: brandon-grotesque, sans-serif;
+        position: absolute;
+        left: 150px;
+        top: 570px;
+        font-style: normal;
+        color: #ffffff;
+        letter-spacing: .05em;
+    }
+    span.caseButton {
+        width: auto;
+        border: solid 1px #ffffff;
+        padding: 20px;
+    }
+    .portfolioContainer {
+        position: relative;
+        width: 100%;
+    }
+    .morePortfolio {
+        position: absolute;
+        top: 25px;
+        left: 75px;
+    }
+    .morePortfolio img {
+        width: 40%;
+        padding: 5px;
+        opacity: .25;
+    }
+    .morePortfolio img:hover {
+        opacity: 100;
+    }
+    .infoContainer {
+        position: relative;
+    }
+    .infoText {
+        position: absolute;
+        font-family: 'Crimson Text', serif;
+        top: 200px;
+        font-size: 48px;
+        left: 175px;
+    }
+    .infoButton {
+        text-transform: uppercase;
+        font-size: 18px;
+        width: 35%;
+        font-family: brandon-grotesque, sans-serif;
+        position: absolute;
+        font-style: normal;
+        color: #f88601;
+        letter-spacing: .05em;
+    }
+    #telButton {
+        float: left;
+        clear: left;
+        top: 300px;
+        left: 100px;
+        width: auto;
+        border: solid 1px #f88601;
+        padding: 30px;
+    }
+    #messageButton {
+        float: right;
+        clear: left;
+        width: auto;
+        border: solid 1px #f88601;
+        padding: 30px;
+        top: 300px;
+        left: 400px;
+    }
+}
+/* ================================================ MEDIUM SCREEN SIZE ================================================ */
+
+@media (min-width: 760px) {
+    .backgroundImages {
+        width: auto;
+        display: block;
+    }
+    /* NAVIGATION AND COVER IMAGE*/
+    
+    header {
+        position: fixed;
+        width: 100%;
+    }
+    header img {
+        float: left;
+    }
+    header ul {
+        display: inline-block;
+        position: fixed;
+        padding-top: 50px;
+    }
+    header li {
+        list-style-type: none;
+        display: inline;
+    }
+    header p {
+        float: right;
+    }
+    .navtext {
+        text-transform: uppercase;
+        font-family: brandon-grotesque, sans-serif;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        color: #ffffff;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 30px;
+        border-bottom: 5px #f88601;
+    }
+    li:hover {
+        color: #f88601;
+    }
+    .bannerTextOne {
+        font-family: 'Crimson Text', serif;
+        color: #ffffff;
+        font-size: 40px;
+        line-height: 80px;
+        position: absolute;
+        top: 227px;
+        left: 150px;
+        width: 80%;
+        background: none;
+    }
+    .brandon {
+        text-transform: uppercase;
+        font-family: brandon-grotesque, sans-serif;
+        font-size: 22px;
+        font-style: normal;
+        color: #ffffff;
+        letter-spacing: .05em;
+    }
+    span.brandon {
+        background: rgba(244, 244, 244, 0.25);
+        padding: 20px;
+    }
+    .bannerTextTwo {
+        text-transform: uppercase;
+        font-family: brandon-grotesque, sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        color: #ffffff;
+        letter-spacing: .05em;
+        position: absolute;
+        top: 487px;
+        left: 150px;
+        width: 80%;
+    }
+    span.bannerTextTwo {
+        border-bottom: solid 3px #ffffff;
+        width: auto;
+        height: 1.5em;
+    }
+    p.bannerTextThree {
+        font-family: 'Crimson Text', serif;
+        color: #323232;
+        font-size: 42px;
+        top: 850px;
+        left: 160px;
+        position: absolute;
+    }
+    p.bannerTextFour {
+        font-family: 'Crimson Text', serif;
+        color: #323232;
+        font-size: 20px;
+        top: 930px;
+        left: 160px;
+        position: absolute;
+    }
+    /* === CASE STUDIES === */
+    
+    .caseContainer {
+        position: relative;
+    }
+    .classLogo {
+        position: absolute;
+        top: 100px;
+        left: 150px;
+    }
+    .titleText {
+        text-transform: uppercase;
+        font-size: 60px;
+        line-height: 70px;
+        font-family: brandon-grotesque, sans-serif;
+        position: absolute;
+        left: 150px;
+        top: 200px;
+        font-style: normal;
+        color: #ffffff;
+        letter-spacing: .05em;
+    }
+    .titleSecondaryText {
+        font-size: 24px;
+        width: 35%;
+        font-family: 'Crimson Text', serif;
+        position: absolute;
+        left: 150px;
+        top: 440px;
+        font-style: normal;
+        color: #ffffff;
+        letter-spacing: .05em;
+    }
+    .caseButton {
+        text-transform: uppercase;
+        font-size: 24px;
+        width: 35%;
+        font-family: brandon-grotesque, sans-serif;
+        position: absolute;
+        left: 150px;
+        top: 570px;
+        font-style: normal;
+        color: #ffffff;
+        letter-spacing: .05em;
+    }
+    span.caseButton {
+        width: auto;
+        border: solid 1px #ffffff;
+        padding: 30px;
+    }
+    .portfolioContainer {
+        position: relative;
+        width: 100%;
+    }
+    .morePortfolio {
+        position: absolute;
+        top: 110px;
+        left: 150px;
+    }
+    .morePortfolio img {
+        width: 30%;
+        padding: 5px;
+        opacity: .25;
+    }
+    .morePortfolio img:hover {
+        opacity: 100;
+    }
+    .infoContainer {
+        position: relative;
+    }
+    .infoText {
+        position: absolute;
+        font-family: 'Crimson Text', serif;
+        top: 200px;
+        font-size: 48px;
+        left: 375px;
+    }
+    .infoButton {
+        text-transform: uppercase;
+        font-size: 18px;
+        width: 35%;
+        font-family: brandon-grotesque, sans-serif;
+        position: absolute;
+        font-style: normal;
+        color: #f88601;
+        letter-spacing: .05em;
+    }
+    #telButton {
+        float: left;
+        clear: left;
+        top: 300px;
+        left: 300px;
+        width: auto;
+        border: solid 1px #f88601;
+        padding: 30px;
+    }
+    #messageButton {
+        float: right;
+        clear: left;
+        width: auto;
+        border: solid 1px #f88601;
+        padding: 30px;
+        top: 300px;
+        left: 650px;
+    }
+}
+/* ================================================ LARGE SCREEN SIZE ================================================ */
+
+@media (min-width: 1000px) {
+    .backgroundImages {
+        width: 100%;
+        display: block;
+    }
+    /* NAVIGATION AND COVER IMAGE*/
+    
+    header {
+        position: fixed;
+        width: 100%;
+    }
+    header img {
+        float: left;
+    }
+    header ul {
+        display: inline-block;
+        position: fixed;
+        padding-top: 50px;
+    }
+    header li {
+        list-style-type: none;
+        display: inline;
+    }
+    header p {
+        float: right;
+    }
+    .navtext {
+        text-transform: uppercase;
+        font-family: brandon-grotesque, sans-serif;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        color: #ffffff;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 50px;
+        border-bottom: 5px #f88601;
+    }
+    li:hover {
+        color: #f88601;
+    }
+    .bannerTextOne {
+        font-family: 'Crimson Text', serif;
+        color: #ffffff;
+        font-size: 60px;
+        line-height: 80px;
+        position: absolute;
+        top: 227px;
+        left: 150px;
+        width: 80%;
+    }
+    .brandon {
+        text-transform: uppercase;
+        font-family: brandon-grotesque, sans-serif;
+        font-size: 32px;
+        font-style: normal;
+        color: #ffffff;
+        letter-spacing: .05em;
+    }
+    span.brandon {
+        background: rgba(244, 244, 244, 0.25);
+        padding: 20px;
+    }
+    .bannerTextTwo {
+        text-transform: uppercase;
+        font-family: brandon-grotesque, sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        color: #ffffff;
+        letter-spacing: .05em;
+        position: absolute;
+        top: 487px;
+        left: 150px;
+        width: 80%;
+    }
+    span.bannerTextTwo {
+        border-bottom: solid 3px #ffffff;
+        width: auto;
+        height: 1.5em;
+    }
+    p.bannerTextThree {
+        font-family: 'Crimson Text', serif;
+        color: #323232;
+        font-size: 48px;
+        top: 900px;
+        left: 190px;
+        position: absolute;
+    }
+    p.bannerTextFour {
+        font-family: 'Crimson Text', serif;
+        color: #323232;
+        font-size: 24px;
+        top: 980px;
+        left: 190px;
+        position: absolute;
+    }
+    /* === CASE STUDIES === */
+    
+    .caseContainer {
+        position: relative;
+    }
+    .classLogo {
+        position: absolute;
+        top: 100px;
+        left: 150px;
+    }
+    .titleText {
+        text-transform: uppercase;
+        font-size: 60px;
+        line-height: 70px;
+        font-family: brandon-grotesque, sans-serif;
+        position: absolute;
+        left: 150px;
+        top: 200px;
+        font-style: normal;
+        color: #ffffff;
+        letter-spacing: .05em;
+    }
+    .titleSecondaryText {
+        font-size: 24px;
+        width: 35%;
+        font-family: 'Crimson Text', serif;
+        position: absolute;
+        left: 150px;
+        top: 440px;
+        font-style: normal;
+        color: #ffffff;
+        letter-spacing: .05em;
+    }
+    .caseButton {
+        text-transform: uppercase;
+        font-size: 24px;
+        width: 35%;
+        font-family: brandon-grotesque, sans-serif;
+        position: absolute;
+        left: 150px;
+        top: 570px;
+        font-style: normal;
+        color: #ffffff;
+        letter-spacing: .05em;
+    }
+    span.caseButton {
+        width: auto;
+        border: solid 1px #ffffff;
+        padding: 30px;
+    }
+    .portfolioContainer {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    .morePortfolio {
+        position: absolute;
+        top: 110px;
+        left: 200px;
+    }
+    .morePortfolio img {
+        width: 22%;
+        padding: 5px;
+        opacity: .25;
+    }
+    .morePortfolio img:hover {
+        opacity: 100;
+    }
+    .infoContainer {
+        position: relative;
+    }
+    .infoText {
+        position: absolute;
+        font-family: 'Crimson Text', serif;
+        top: 200px;
+        font-size: 48px;
+        left: 575px;
+    }
+    .infoButton {
+        text-transform: uppercase;
+        font-size: 18px;
+        width: 35%;
+        font-family: brandon-grotesque, sans-serif;
+        position: absolute;
+        font-style: normal;
+        color: #f88601;
+        letter-spacing: .05em;
+    }
+    #telButton {
+        float: left;
+        clear: left;
+        top: 300px;
+        left: 500px;
+        width: auto;
+        border: solid 1px #f88601;
+        padding: 30px;
+    }
+    #messageButton {
+        float: right;
+        clear: left;
+        width: auto;
+        border: solid 1px #f88601;
+        padding: 30px;
+        top: 300px;
+        left: 850px;
+    }
+}
